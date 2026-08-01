@@ -1,119 +1,299 @@
-body{
-      background:linear-gradient(#6C5353, #353131) ;
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: "Libre Bodoni", serif;
+  background: linear-gradient(#6c5353 0%, #353131 100%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #ffffff;
+
+  font-size: 29px;
+}
+
+/* 
+  # - acessa ids
+  . - acessa classes
+*/
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 
-body{
-      font-family: "Libre Bodoni", serif;
+a {
+  color: #000000;
+}
+
+a,
+button {
+  transition: all 300ms;
+}
+
+header {
+  background-color: #d9c2c2;
+  padding: 16px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* seletor de filho direto > */
+
+header > a {
+  font-size: 32px;
+}
+
+header button {
+  margin-left: 180px;
+  background: none;
+  border: none;
+}
+
+header ul {
+  display: none;
+}
+
+header ul a {
+  padding: 8px 16px;
+  border-radius: 4px;
+}
+
+header ul a:hover {
+  background-color: #000000;
+}
+
+main {
+  margin-top: 48px;
+  margin-bottom: 72px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+section {
+  margin-bottom: 72px;
+}
+
+section h2{
+  color: #ffffff;
+  font-size: 25px;
+  margin-bottom: 14px;
+
+  margin-left: 27px;
+  margin-right: 121px;
+}
+
+section p {
+  margin-left: 27px;
+  margin-right: 121px;
+  font-size: 15px;
+  margin-bottom: 25px;
+  color: #E1DCDC;
+}
+
+/* trabalhando com o seletor de id  = # */
+#hero img {
+  display: none;
+}
+
+/* id da seção de projetos */
+#projetos p {
+  font-size: 16px;
 }
 
 article {
-      /* mudar a cor do background */
-      background-color: aqua;
-      margin-bottom: 16px;
-      border-radius: 32px;
-      padding: 14px;
-      border: 4px, solid orange;
+  background: linear-gradient(#be7575 0%, #737373 100%);
+  border-radius: 32px;
+  padding: 14px;
+  margin-bottom: 63px;
 }
 
-article img{
-      border-radius: 29px;
-      width: 100%;
-}
-
+article p,
 article h3{
-      font-size: 24px;
-      margin-top: 8px;
-      margin-bottom: 4px;
+  color: #000000;
+  margin-left: 30px;
+  margin-right: 50px;
+
+}
+article img {
+  border-radius: 24px;
+  width: 100%;
+}
+
+article h3 {
+  font-size: 24px;
+  margin-top: 8px;
+  margin-bottom: 4px;
 }
 
 article p {
-      margin-bottom: 28px;
+  margin-bottom: 24px;
 }
 
-article a{
-      /* mudar cor */
-      background-color: #6C5353;
-      border-radius: 24px;
-      width: 100%;
-      display: block;
-      padding-top: 14px;
-      padding-bottom: 14px;
-      text-align: center;
-      color: azure;
+article a {
+  background: #5e2424;
+  color: #ffffff;
+
+  border-radius: 24px;
+  display: block;
+
+  margin-left: 35px;
+  width: 237px;
+  height: 20px;
+  font-size: 15px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  text-align: center;
+}
+
+article a:hover {
+  background-color: #7a5c5c;
+  color: #000000;
+}
+
+section form {
+  border-radius: 32px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 16px;
+  padding-right: 16px;
+
+  display: flex;
+  /* muda a direção dos elementos dentro da caixa flexível */
+  flex-direction: column;
+  gap: 16px;
+  /* remover essa propriedade */
+  background-color: #aba8a8;
+}
+
+form div {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+label {
+  font-size: 16px;
+  color: #000000;
+  margin-left: 25px;
+}
+
+input::placeholder,
+textarea::placeholder{
+      color: #ffffff52;
+      font-weight: bold;
+      padding: 10px;
+}
+
+input,
+textarea {
+      font-family: inherit;
+
+      margin-bottom: 15px;
+      margin-left: 25px;
+      font-size: 12px;
+      width: 240px;
+     height: 29px;
+      background-color: #504F4F;
+      border-radius: 12px;
+      border: 1px solid #ffffff;
+}
+
+textarea {
+  height: 128px;
+  font-family: inherit;
+}
+
+button {
+      margin-left: 47px;
+      margin-right: 51px;
+      width: 193px;
+  height: 38px;
+  border-radius: 24px;
+  border: none;
+  border: 1px solid #ffffff;
+  background-color: #32e632;
+  font-size: 14px;
+  color: #ffffff;
+
+  font-family: inherit;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #29a729bd;
+}
+
+footer {
+  background-color: #d5b7b7;
+  padding: 20px;
+  text-align: center;
 }
 
 
-section form{
-      border-radius: 16px;
-      padding-top: 20px;
-      padding-bottom: 20px;
-      padding-left: 16px;
-      padding-right: 16px;
-
-      /* deixa os elementos flexíveis */
-      display: flex;
-
-      /* muda a direção dos elementos dentro da caixa flexível */
-      flex-direction: column;
-      gap: 6px;
-
-
-
-      /* remover */
-      background-color: blue;
+footer p {
+  color: #725757;
+  font-size: 16px;
+  text-align: center;
+  margin-top: 8px;
 }
 
-div{
-      display: flex;
-      flex-direction: column;
-      gap: 12px;
-}
+@media (min-width: 768px) {
+  header button {
+    display: none;
+  }
 
-label{
-      /* mudar */
-      font-size: 14px;
-}
+  header ul {
+    display: flex;
+    gap: 16px;
+  }
 
-input, textarea{
-      border: 2px solid rgb(210, 202, 202);
-      border-radius: 20px;
-      padding: 13px;
-      background-color: #6C5353;
-      color: #D5B7B7;
-}
+  #hero {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
 
-textarea{
-      height: 128px;
-      font-family: "Libre Bodoni", serif;
-}
+  h2 span {
+    color: brown;
+  }
 
-button{
-      height: 48px;
-      border-radius: 24px;
-      border: none;
-      background-color: aliceblue;
-      font-size: 14px;
-      color: black;
-      font-weight: 600;
-}
+  #hero img {
+    display: block;
+    height: 323px;
+    border-radius: 32px;
+    width: 100px;
+    object-fit: cover;
+  }
 
-::placeholder{
-      color: rgb(151, 156, 161);
-}
+  #hero {
+    max-width: 500px;
+  }
 
-footer{
-      background-color: #D5B7B7;
-      padding: 20px;
-}
+  section ul {
+    display: flex;
+    gap: 16px;
+  }
 
-footer ul{
-      display: flex;
-      gap: 8px;
-      justify-content: center;
-}
-
-footer p{
-      text-align: center;
-      margin-top: 8px;
+  footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
