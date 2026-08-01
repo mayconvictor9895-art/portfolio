@@ -219,14 +219,14 @@ textarea {
   font-family: inherit;
 }
 
-button {
-      margin-left: 47px;
+form button {
+  margin-left: 47px;
       margin-right: 51px;
       width: 193px;
-  height: 38px;
-  border-radius: 24px;
-  border: none;
-  border: 1px solid #ffffff;
+      height: 38px;
+      border-radius: 24px;
+      border: none;
+      border: 1px solid #ffffff;
   background-color: #32e632;
   font-size: 14px;
   color: #ffffff;
@@ -236,7 +236,7 @@ button {
   cursor: pointer;
 }
 
-button:hover {
+form button:hover {
   background-color: #29a729bd;
 }
 
@@ -254,46 +254,101 @@ footer p {
   margin-top: 8px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 760px) {
+
+  .header{
+    margin-left: 80px;
+    margin-right: 80px;
+  }
+  
+
+  main{
+    margin-left: 80px;
+    margin-right: 80px;
+  }
+
   header button {
     display: none;
   }
-
+  
   header ul {
     display: flex;
     gap: 16px;
   }
-
+  
+  
   #hero {
     display: flex;
     align-items: center;
     gap: 24px;
   }
+  
+  #hero div{
+    max-width: 500px;
+  }
+  
+a{
+  font-size: 19px;
+}
+
+  h2{
+    font-size: 32px;
+  }
 
   h2 span {
     color: brown;
   }
-
+  
   #hero img {
     display: block;
-    height: 323px;
+    margin-left: 180px;
+    
+    height: 367px;
+    width: 368px;
+    
     border-radius: 32px;
-    width: 100px;
-    object-fit: cover;
+    
   }
-
-  #hero {
-    max-width: 500px;
-  }
-
-  section ul {
+  #projetos ul {
     display: flex;
     gap: 16px;
   }
+  
+  #projetos ul{
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  article{
+    height: 430px;
+    width: 300px;
+  }
+  
+  form{
+    display: flex;
+    align-items: center;
+  }
+  
+  input{
+        font-family: inherit;
+  
+        margin-bottom: 15px;
+        margin-left: 25px;
+        font-size: 12px;
+        width: 817px;
+       height: 29px;
+  }
 
-  footer {
+  textarea{
+    width: 821px;
+    height: 167px;
+  }
+
+  footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
+  
 }
+  
